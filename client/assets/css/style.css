@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+
+:root {
+    --mainColor: #254B72;
+    --darkColor: #233648;
+    --secondColor: #83A5C8; 
+    --clarityColor: #C7DCF2;
+}
+
+a {
+    text-decoration: none;
+}

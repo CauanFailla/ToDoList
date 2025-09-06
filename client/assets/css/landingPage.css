@@ -1,0 +1,55 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .sec-logo-header {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+header .sec-logo-header > i {
+    font-size: 1.1rem;
+    color: var(--mainColor);
+    margin-top: 3px;
+}
+
+header .sec-logo-header > h1 {
+    font-size: 1.8rem;
+    margin-left: 5px;
+    color: var(--darkColor);
+    cursor: default;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+header nav > a {
+    margin-left: 10px;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    
+}
+
+header nav > .btn__login {
+    color: var(--darkColor);
+    transition-duration: 0.2s;
+}
+
+header nav > .btn__login:hover {
+    color: black;
+}
+
+header nav > .btn__cadastro {
+    background-color: var(--mainColor);
+    color: white;
+    transition-duration: 0.2s;
+}
+
+header nav > .btn__cadastro:hover {
+    background-color: var(--darkColor);
+}
