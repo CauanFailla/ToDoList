@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="logo-header">
+            <h1>Dostrel</h1>
+        </section>
+    </header>
+    <main>
+        <h1>Cadastre-se</h1>
+        <section class="sec-cadastro">
+            <form action="/auth/enviarCadastro" method="post">
+                <input type="text" name="name" id="iname" placeholder="Digite seu nome" required> <br>
+                <input type="email" name="email" id="iemail" placeholder="E-mail" required> <br>
+                <input type="password" name="password" id="ipassword" placeholder="Digite a senha" required> <br>
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
