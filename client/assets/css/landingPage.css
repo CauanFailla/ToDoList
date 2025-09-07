@@ -53,3 +53,133 @@ header nav > .btn__cadastro {
 header nav > .btn__cadastro:hover {
     background-color: var(--darkColor);
 }
+
+main {
+    margin-top: 70px;
+    width: 100%;
+    padding: 0px 75px;
+}
+
+.sec-hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.title__container__hero h1 {
+    font-size: 2.9rem;
+    color: rgb(37, 37, 37);
+}
+
+.title__container__hero p {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.623);
+    margin: 42px 0px;
+}
+
+.img__container__hero {
+    width: 62%;
+    display: flex;
+    justify-content: center;
+}
+
+.img__container__hero img {
+    width: 100%;
+    height: 82%;
+}
+
+
+.btn__cadastro__hero {
+    background-color: var(--mainColor);
+    color: white;
+    transition-duration: 0.2s;
+    padding: 11px 27px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.288);
+}
+
+.btn__cadastro__hero:hover {
+    background-color: var(--darkColor);
+}
+
+.sec-about {
+    margin-top: 10px;
+}
+
+.title__about {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(26, 26, 26);
+}
+
+.title__contrast__about {
+    font-size: 2rem;
+    padding: 10px 0px;
+}
+
+.sec-about p {
+    font-size: 1.2rem;
+    color: rgb(37, 37, 37);
+    padding-bottom: 15px;
+}
+
+.sec-features {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0px;
+    width: 100%;
+}
+
+.sec-features h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.container-features {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    font-size: 17px;
+    gap: clamp(0.5rem, 1vw, 1.5rem);
+
+}
+
+.titulo-features {
+    color: black;
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
+.container-features > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    min-width: 0; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: default;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.63);
+}
+
+.icon-features {
+    color: var(--mainColor);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: var(--mainColor);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    cursor: default;
+}
