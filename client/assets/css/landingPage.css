@@ -44,31 +44,35 @@ header nav > .btn__login:hover {
     color: black;
 }
 
-header nav > .btn__cadastro {
+header nav > .btn__contrast {
     background-color: var(--mainColor);
     color: white;
     transition-duration: 0.2s;
 }
 
-header nav > .btn__cadastro:hover {
+header nav > .btn__contrast:hover {
     background-color: var(--darkColor);
 }
 
 main {
-    margin-top: 70px;
+    margin-top: 90px;
     width: 100%;
     padding: 0px 75px;
 }
 
 .sec-hero {
     width: 100%;
+    height: 390px;
     display: flex;
     justify-content: space-between;
 }
 
 
+.title__container__hero {
+    padding-right: 10px;
+}
 .title__container__hero h1 {
-    font-size: 2.9rem;
+    font-size: 3.4rem;
     color: rgb(37, 37, 37);
 }
 
@@ -79,18 +83,24 @@ main {
 }
 
 .img__container__hero {
-    width: 62%;
+    width: 63%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #254c7262;
+    border-radius: 15px;
 }
 
 .img__container__hero img {
-    width: 100%;
-    height: 82%;
+    width: 95%;
+    height: 90%;
+    box-shadow: 1px 1px 10px #254c72d5;
+    border-radius: 15px;
 }
 
 
-.btn__cadastro__hero {
+.title__container__hero .btn__contrast {
     background-color: var(--mainColor);
     color: white;
     transition-duration: 0.2s;
@@ -102,12 +112,12 @@ main {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.288);
 }
 
-.btn__cadastro__hero:hover {
+.title__container__hero .btn__contrast:hover {
     background-color: var(--darkColor);
 }
 
 .sec-about {
-    margin-top: 10px;
+    margin-top: 180px;
 }
 
 .title__about {

@@ -11,14 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="landingpage">
     <header>
         <section class="sec-logo-header">
             <h1>Dostrel</h1>
         </section>
         <nav>
             <a href="pages/login.html" class="btn__login">Entrar</a>
-            <a href="pages/register.html" class="btn__cadastro">Cadastre-se</a>
+            <a href="/cadastro" class="btn__cadastro btn__contrast">Cadastre-se</a>
         </nav>
     </header>
     <main>
@@ -26,10 +26,13 @@
             <div class="title__container__hero">
                 <h1>Transforme <br> seu dia</h1>
                 <p>Junte-se a nós e transforme o seu <br> dia a dia em uma jornada <br> de extrema eficiência</p>
-                <button class="btn__cadastro__hero">Cadastre-se</button>
+                <div class="btn__container__hero">
+                    <button class="btn__cadastro__hero btn__contrast">Cadastre-se</button>
+                </div>
+                
             </div>
             <div class="img__container__hero">
-                <img src="assets/img/data-dashboard.avif" alt="">
+                <img src="assets/img/imgtasks.png" alt="">
             </div>
         </section>
         <section class="sec-about">
@@ -76,5 +79,6 @@
         </section>
     </main>
     <footer><strong>©Dostrel</strong></footer>
+    <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
