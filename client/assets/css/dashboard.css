@@ -1,0 +1,288 @@
+main {
+    display: flex;
+}
+
+.sec-sidebar {
+    position: fixed;
+    padding: 15px;
+    width: 21%;
+    height: 100%;
+    background-color: #23364811;
+}
+
+.header__sidebar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header__sidebar .user__header {
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.header__sidebar .user__header .icon__user {
+    font-size: 1.6rem;
+    color: black;
+}
+
+.header__sidebar .user__header .user__name__info {
+    font-size: 0.9rem;
+    margin: 0px 8px;
+}
+
+.header__sidebar .user__header .btn__more__user {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.685);
+    cursor: pointer;
+}
+
+.header__sidebar .icon__information, .icon__bell {
+    font-size: 1.1rem;
+    color: rgb(68, 68, 68);
+    cursor: pointer;
+}
+
+.header__sidebar .icon__bell {
+    margin-left: 10px;
+}
+
+.main__sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0px;
+    height: 100%;
+}
+
+.main__sidebar p {
+    font-weight: 300;
+}
+
+.btn__sidebar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 7px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+
+.btn__sidebar:hover {
+    background-color: #254c721a;
+}
+
+.btn__sidebar i {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.432);
+}
+
+.btn__contrast__sidebar {
+    background-color: #254c72;
+    color: white;
+}
+
+.btn__contrast__sidebar:hover {
+    background-color: #254c72;
+}
+
+.btn__contrast__sidebar i {
+    color: white;
+}
+
+.btn__upgrade {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 4px 7px;
+    cursor: pointer;
+}
+
+.btn__upgrade i {
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.btn__upgrade p {
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.sec-main {
+    width: 100%;
+    display: flex;
+    padding: 60px 160px;
+    margin-left: 21%;
+}
+
+.main__management {
+    width: 100%;
+}
+
+.title__workspace__container p {
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.home__default h1 {
+    font-size: 1.6rem;
+}
+
+.btns__workspace__container {
+    display: flex;
+    margin: 35px 0px;
+    gap: 35px;
+    
+}
+
+.home__default .btn__workspace {
+    width: 220px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition-duration: 0.2s;
+}
+
+.btn__workspace:hover {
+    box-shadow: 2px 2px 10px black;
+}
+
+
+.home__default .btn__workspace div {
+    width: 100%;
+    height: 75px;
+}
+
+.home__default .btn__workspace img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.home__default .btn__workspace p {
+    padding: 8px;
+    font-weight: 300;
+}
+
+.btn__add__workspace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainColor);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.tasks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 8px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.753);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.048);
+}
+
+.tasks:hover {
+    color: black;
+}
+
+.tasks input {
+    margin-right: 7px;
+    border: none;
+}
+
+.tasks i {
+    cursor: pointer;
+}
+
+.btn__add__task {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    padding: 5px 6px;
+    cursor: pointer;
+    color: var(--mainColor);
+    font-weight: 700;
+}
+
+.btn__add__task i {
+    font-size: 1.2rem;
+}
+
+.btn__add__task:hover {
+    color: #2f5f8f;
+}
+
+#addTaskForm {
+    margin-top: 15px;
+    width: 100%;
+}
+
+#addTaskForm .title__form {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#addTaskForm .btn__add__form {
+    background-color: #254c72;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#addTaskForm .btn__add__form:hover {
+    background-color: #2f5f8f;
+}
+
+.btns__form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition-duration: 0.2s;
+}
+
+.btn__close__form {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.699);
+    cursor: pointer;
+    
+}
+
+.btn__close__form:hover {
+    color: black;
+}
+
+.btn__edit__form {
+    background-color: #23364846;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn__back__home {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.801);
+    transition-duration: 0.2s;
+}
+
+.btn__back__home:hover {
+    color: rgb(0, 0, 0);
+}
