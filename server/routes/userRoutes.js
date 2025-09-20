@@ -1,7 +1,8 @@
 import { Router } from "express";
-import { sendInfoUser } from "../controllers/userControllers.js"
+import { getUser, setOnPage, getPreviousPage} from "../controllers/userControllers.js"
 
 const router = Router()
-router.get('/', sendInfoUser)
-
+router.get('/getUser', getUser)
+router.get('/getPreviousPage', getPreviousPage)
+router.post('/setOnPage', setOnPage)
 export default router

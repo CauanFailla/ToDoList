@@ -14,6 +14,10 @@ app.use(session({
     cookie: {secure:false}
 }))
 app.use(routes)
+app.use((err, req, res, next) => {
+    console.error("Erro interno:", err.stack)
+    res.status(500).json({ success: false, message: "Erro interno no servidor" })
+})
 app.use(express.static(path.join(__dirname, '../client')));
 
 app.listen(port, ()=>{
