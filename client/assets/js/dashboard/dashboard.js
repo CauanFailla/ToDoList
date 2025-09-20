@@ -1,7 +1,9 @@
-//import { updateHeader } from './updateDashboard.js'
+import { updateHeader } from '../ui/updateDashboard.js'
 import { initTask } from './task.js'
+import { initWorkspace } from '../ui/workspaces.js'
 
 export async function initDashboard() {
-//    updateHeader()
+    updateHeader()
+    initWorkspace()
     initTask()
 }

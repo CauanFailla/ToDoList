@@ -1,5 +1,5 @@
-import { getTasks } from "../data/getDataTasks.js"
-import { createTaskInHtml } from "./taskAdd.js"
+import { getTasks } from "../data/task.js"
+import { createTaskInHtml } from "../ui/tasks.js"
 import { initCheckbox } from "./taskStatus.js"
 export async function updateTasks() {
     const tasks = await getTasks()

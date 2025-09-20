@@ -1,4 +1,4 @@
-import { getData } from "../data/getDataUser.js"
+import { getUser } from "../data/user.js"
 
 function addElementsInHtml(btnHeader, btnHero) {
     const containerNav = document.querySelector('header > nav')
@@ -33,7 +33,7 @@ function removeElements() {
 }
 
 export async function changeForUser() {
-    const user = await getData()
+    const user = await getUser()
     if(user) {
         removeElements()
         createElements(user.name)

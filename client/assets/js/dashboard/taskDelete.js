@@ -1,17 +1,7 @@
-async function deleteTaskInServer(taskId) {
-    console.log(taskId)
-    const response = await fetch(`http://127.0.0.1:3000/tasks/${taskId}`, {
-        method: "DELETE"
-    })
-    const result = await response.json()
-    return result
-}
+import { deleteTaskInHtml } from "../ui/tasks.js"
+import { deleteTaskInServer } from "../data/task.js"
 
-function deleteTaskInHtml(task) {
-    task.parentNode.remove()
-}
-
-export function initDelete() {
+export function initDeleteTask() {
     const btnsDelete = document.querySelectorAll('.btn__delete')
     btnsDelete.forEach((btn)=>{
         btn.addEventListener('click', async ()=>{
