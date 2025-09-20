@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dostrel</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body id="dashboard">
+    <main>
+        <section class="sec-sidebar">
+            <div class="header__sidebar">
+                <div class="user__header">
+                    <i class="fa-regular fa-circle-user icon__user"></i>
+                    <p class="user__name__info">User</p>
+                    <i class="fa-solid fa-angle-down btn__more__user"></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-circle-question icon__information"></i>
+                    <i class="fa-regular fa-bell icon__bell"></i>
+                </div>
+            </div>
+            <div class="main__sidebar">
+                <div>
+                    <div class="btn__contrast__sidebar btn__sidebar">
+                        <i class="fa-regular fa-window-restore"></i>
+                        <p>Home</p>
+                    </div>
+                    <div class="btn__sidebar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>Buscar</p>
+                    </div>
+                    <div class="btn__sidebar">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>Calendário</p>
+                    </div>
+                    <div class="btn__sidebar">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>Histórico</p>
+                    </div>
+                    <div class="btn__sidebar">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Configurações</p>
+                    </div>
+                </div>
+                <div class="btn__upgrade">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p>Entre em contato</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec-main">
+            <div class="main__management">
+                <div class="home__default hidden">
+                    <div class="title__workspace__container">
+                        <h1>Principais áreas de trabalho</h1>
+                        <p>Recomendações para você</p>
+                    </div>
+                    <div class="btns__workspace__container">
+                        <div class="btn__workspace btn__workspace__task">
+                            <div>
+                                <img src="../assets/img/pexels-jplenio-1103970.jpg" alt="">
+                            </div>
+                            <p>Tarefas</p>
+                        </div>
+                        <div class="btn__workspace">
+                            <div>
+                                <img src="../assets/img/pexels-alp-mmiy-2147670381-29703226.jpg" alt="">
+                            </div>
+                            <p>Rotina</p>
+                        </div>
+                    </div>
+                    <div class="title__workspace__container">
+                        <h1>Sua área de trabalho</h1>
+                        <p>Liberdade total na personalização</p>
+                    </div>
+                    <div class="btns__workspace__container">
+                        <div class="btn__workspace">
+                            <div>
+                                <img src="../assets/img/pexels-little-visuals-1954.jpg" alt="">
+                            </div>
+                            <p>Pessoal</p>
+                        </div>
+                        <div class="btns__workspace btn__add__workspace">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task__default hidden workspace">
+                    <i class="fa-solid fa-arrow-left btn__back__home"></i>
+                    <h1>Tarefas</h1>
+                
+                    <div class="container__tasks">
+                        
+                    </div>
+                    <div class="btn__add__task">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <p>Adicionar tarefa</p>
+                    </div>
+                    <form class="hidden" id="addTaskForm">
+                        <input class="title__form" type="text" name="title" id="ititle" placeholder="Adicione um título para sua tarefa"> <br>
+                        <div class="btns__form">
+                            <input class="btn__add__form" type="submit" value="Adicionar">
+                            <button class="btn__edit__form">Editar</button>
+                            <i class="fa-solid fa-xmark btn__close__form"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>
